@@ -3,6 +3,11 @@
 	padding: 0;
 }
 
+@font-face {
+	font-family: Magda;
+	src: url(font.ttf);
+}
+
 a::-moz-selection {
 	background-color: rgba(0, 0, 0, 0);
 }
@@ -34,7 +39,7 @@ body, html {
 
 #txt {
 	font-size: 8vh;
-	font-family: MagdaCleanMono;
+	font-family: Magda;
 	border-bottom: 3px solid black;
 	color: rgba(0, 0, 0, 0);
 	text-transform: uppercase;
@@ -49,11 +54,58 @@ body, html {
 	animation-duration: 1.5s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
+	-moz-animation-name: tri;
+	-moz-animation-duration: 1.5s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: ease-in-out;
+	-wekbkit-animation-name: tri;
+	-wekbkit-animation-duration: 1.5s;
+	-wekbkit-animation-iteration-count: infinite;
+	-wekbkit-animation-timing-function: ease-in-out;
+	-o-animation-name: tri;
+	-o-animation-duration: 1.5s;
+	-o-animation-iteration-count: infinite;
+	-o-animation-timing-function: ease-in-out;
 	display: block;
 }
 
-
 @keyframes tri {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.05;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes tri {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.05;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes tri {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.05;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes tri {
 	0% {
 		opacity: 1;
 	}
