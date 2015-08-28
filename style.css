@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a::-moz-selection {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+a::selection {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+a {
+	cursor: default;
+}
+
+body, html {
+	height: 100%;
+}
+
+#wrap {
+	background-color: #eaeaea;
+	box-shadow: inset 7vw 7vw 20vw  rgba(0, 0, 0, 0.2), inset -7vw -7vw 20vw rgba(0, 0, 0, 0.2);
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+#cont {
+	text-align: center;
+	padding-top: 40vh;
+}
+
+#txt {
+	font-size: 8vh;
+	font-family: MagdaCleanMono;
+	border-bottom: 3px solid black;
+	color: rgba(0, 0, 0, 0);
+	text-transform: uppercase;
+	transition: color 0.5s, width 0.3s;
+}
+
+#tri {
+	margin-top: -10px;
+	font-size: 10vh;
+	color: red;
+	animation-name: tri;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	display: block;
+}
+
+
+@keyframes tri {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.05;
+	}
+	100% {
+		opacity: 1;
+	}
+}
