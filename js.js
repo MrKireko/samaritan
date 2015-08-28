@@ -3,7 +3,7 @@ $(document).ready(function(){
 	var url = document.URL
 	var i = 0;
 	if (url.indexOf("?") > -1){
-		var inp = url.replace("?", "_").split("_");
+		var inp = url.replace("?", "_").replace("%20", "_").split("_");
 		i = 1;
 	}
 	inp.push(inp[inp.length - 1])
