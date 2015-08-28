@@ -1,9 +1,14 @@
 $(document).ready(function(){
-	var inp = "What are your commands".split(" ");
+	var inp = "What are your commands ?".split(" ");
+	var url = document.URL
+	var i = 0;
+	if (url.indexOf("?") > -1){
+		var inp = url.replace("?", "_").split("_");
+		i = 1;
+	}
 	inp.push(inp[inp.length - 1])
 	console.log(inp);
 	function post() {
-		var i = 0;
 		var interval = setInterval(function(){
 			$("#txt").css("color", "black");
 			$("#txt").html(inp[i]);
