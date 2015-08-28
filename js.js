@@ -13,7 +13,7 @@ $(document).ready(function(){
 				setTimeout(function(){ $("#txt").html("---"); }, 500);
 				clearInterval(interval);
 			}
-		}, 650);
+		}, 600);
 	}
 	setTimeout(function(){ post(); }, 10);
 });
