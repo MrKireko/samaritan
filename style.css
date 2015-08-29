@@ -35,15 +35,31 @@ body, html {
 #cont {
 	text-align: center;
 	padding-top: 40vh;
+	transform: translateY(-20px);
 }
 
 #txt {
 	font-size: 8vh;
 	font-family: Magda;
-	border-bottom: 3px solid black;
+/*	border-bottom: 3px solid black;*/
 	color: rgba(0, 0, 0, 0);
 	text-transform: uppercase;
 	transition: color 0.5s, width 0.3s;
+}
+
+#txtwrap {
+	display: block;
+	transform: translateY(20px);
+}
+
+#line {
+	background-color: black;
+	width: 12vh;
+	min-width: 12vh;
+	height: 0.4vh;
+	display: inline-block;
+	border-radius: 50px;
+	transition: width 0.2s;
 }
 
 #tri {
