@@ -35,7 +35,7 @@ body, html {
 #cont {
 	text-align: center;
 	padding-top: 40vh;
-	transform: translateY(-20px);
+	transform: translateY(-3vh);
 }
 
 #txt {
@@ -47,9 +47,13 @@ body, html {
 	transition: color 0.5s, width 0.3s;
 }
 
-#txtwrap {
+#txtwrap1 {
+	transform: translateY(3.5vh);
 	display: block;
-	transform: translateY(20px);
+}
+
+#txtwrap {
+/*	margin-left: 1vh;*/
 }
 
 #line {

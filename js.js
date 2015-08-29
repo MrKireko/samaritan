@@ -13,8 +13,9 @@ $(document).ready(function(){
 			$("#txt").css("color", "black");
 			$("#txt").html(inp[i]);
 			i = i+1;
-			$("#line").css("width", $("#txt").css("width"));
-			console.log($("#txt").css("width"));
+			linew = parseInt($("#txtwrap").css("width")) + 15;
+			$("#line").css("width", linew);
+			console.log(linew);
 			if (i == inp.length) {
 				$("#txt").css("color", "rgba(0, 0, 0, 0)");
 				setTimeout(function(){ $("#txt").html("---"); }, 500);
